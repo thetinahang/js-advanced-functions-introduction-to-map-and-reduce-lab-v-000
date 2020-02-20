@@ -14,3 +14,15 @@ function mapToDouble(sourceArray) {
 function mapToSquare(sourceArray) {
 
 };
+
+function reduceToTotal(sourceArray, startingPoint) {
+
+};
+
+function reduceToAllTrue(sourceArray) {
+
+};
+
+function reduceToAnyTrue(sourceArray) {
+
+};
