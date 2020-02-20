@@ -27,9 +27,7 @@ function reduceToAllTrue(sourceArray) {
       return true;
     } else {
       return false;
-    }
-  }
-  )
+    }})
 };
 
 function reduceToAnyTrue(sourceArray) {
