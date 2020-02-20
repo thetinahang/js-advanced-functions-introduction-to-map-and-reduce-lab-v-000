@@ -31,5 +31,11 @@ function reduceToAllTrue(sourceArray) {
 };
 
 function reduceToAnyTrue(sourceArray) {
-
+  return sourceArray.reduce(function(total, value) {
+    if (total || value) {
+      return true;
+    } else {
+      return false;
+    }
+  })
 };
