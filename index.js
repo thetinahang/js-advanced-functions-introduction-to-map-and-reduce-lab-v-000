@@ -22,7 +22,14 @@ function reduceToTotal(sourceArray, startingPoint) {
 };
 
 function reduceToAllTrue(sourceArray) {
-
+  return sourceArray.reduce(function(total, value) {
+    if (total && value) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  )
 };
 
 function reduceToAnyTrue(sourceArray) {
