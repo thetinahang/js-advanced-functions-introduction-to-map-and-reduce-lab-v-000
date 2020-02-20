@@ -15,10 +15,10 @@ function mapToSquare(sourceArray) {
   return sourceArray.map(num => num ** 2);
 };
 
-function reduceToTotal(sourceArray, startingPoint) {
-  return sourceArray.reduce(function(total, num) {
-    return total + num;
-  }, startingPoint)
+function reduceToTotal(sourceArray, index) {
+  return sourceArray.reduce(function(total, index) {
+    return total + index;
+  }, index)
 };
 
 function reduceToAllTrue(sourceArray) {
