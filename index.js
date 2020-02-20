@@ -16,9 +16,14 @@ function mapToSquare(sourceArray) {
 };
 
 function reduceToTotal(sourceArray, index) {
-  return sourceArray.reduce(function(total, index) {
-    return total + index;
-  }, index)
+  let value = 0;
+  if (index) {
+    value = index;
+  }
+  for (const e of sourceArray) {
+    value = value + e;
+  }
+  return value;
 };
 
 function reduceToAllTrue(sourceArray) {
